@@ -200,9 +200,7 @@ margin-top: 5px;
 }
 
 .bazar-productos img {
-    width: 300px;
-    height: 300px;
-    
+    width: 60%;
 }
 
 .deco{
@@ -219,8 +217,7 @@ margin-top: 5px;
 }
 
 .deco-productos img{
-    width: 300px;
-    height: 300px;
+    width: 60%;
 }
 
 /*ESTRUCTURA CHAMBA PREMIUM*/
@@ -238,8 +235,7 @@ margin-top: 5px;
 }
 
 .premium-bazar img{
-    width: 300px;
-    height: 300px;
+    width: 60%
 }
 
 .decoprem{
@@ -256,8 +252,7 @@ margin-top: 5px;
 }
 
 .premium-deco img{
-    width: 300px;
-    height: 300px;
+    width: 60%
 }
 
 /*ESTRUCTURA MUEBLES*/
@@ -290,22 +285,32 @@ margin: 15px 15px;
 }
 
 .muebles-premium img{
-    width: 300px;
-    height: 300px;
+    width: 60%;
 }
 
 
 /*mq de celular index*/
 
-@media screen and (max-width:300px){
+@media screen and (max-width:800px){
    
-.bazar .bazar-productos{
-    display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    .bazar{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "bazar-productos";
+    }
 
-    grid-template-areas: ;
-}
-
-
+    div .bazar-productos{
+        grid-area: "bazar-productos";
+    }
+    
+    .deco{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "deco-productos";
+    }
+    div .deco-productos{
+        grid-area: "deco-productos";
+    }
 }
