@@ -132,9 +132,11 @@ h2{
 }
 
 .botoncompra{
-    background-color: rgb(243, 238, 225); border-radius: 15px;
+    background-color: rgb(243, 238, 225); 
+    border-radius: 15px;
     padding: 10px;
 }
+
 
 .redes img{
 width: 40px;
@@ -174,21 +176,31 @@ margin-top: 5px;
 .maquina-router{
     background-color: rgb(216, 158, 104);
     margin: 20px 10px 20px 10px;
+    padding: 3rem;
 }
 
 .maquina-laser{
     background-color: rgb(216, 158, 104);
     margin: 20px 10px 20px 10px;
+    padding: 3rem;
 }
 
+.row p{
+    text-align: center;
+    font-size: 15px;
+}
 
+ul li:hover{
+    border-radius: 3rem;
+    border: rgb(145, 102, 67) solid;
+    padding: 2rem;
+ }
 
 
 /*--ESTRUCTURA PRODUCTOS--*/
 
 .bazar{
     display: grid;
-    height: 800px;
     background-color: rgb(216, 185, 139);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
@@ -197,6 +209,7 @@ margin-top: 5px;
     font-size: 20px;
     color: rgb(114, 96, 69);
     gap: 3rem;
+    padding: 5rem;
 }
 
 .bazar-productos img {
@@ -205,7 +218,6 @@ margin-top: 5px;
 
 .deco{
     display: grid;
-    height: 800px;
     background-color: rgb(153, 125, 84);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
@@ -214,6 +226,7 @@ margin-top: 5px;
     font-size: 20px;
     color: rgb(245, 242, 238);
     gap: 3rem;
+    padding: 5rem;
 }
 
 .deco-productos img{
@@ -224,15 +237,16 @@ margin-top: 5px;
 
 .premium{
     display: grid;
-    height: 800px;
     background-color: rgb(216, 185, 139);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
     justify-items: center;
     align-items: center;
     font-size: 20px;
-    color: rgb(51, 42, 28)
-}
+    color: rgb(51, 42, 28);
+    gap:5rem;
+    padding: 5rem;
+    }
 
 .premium-bazar img{
     width: 60%
@@ -240,7 +254,6 @@ margin-top: 5px;
 
 .decoprem{
     display: grid;
-    height: 800px;
     background-color: rgb(153, 125, 84);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
@@ -249,6 +262,7 @@ margin-top: 5px;
     font-size: 20px;
     color: rgb(245, 242, 238);
     gap: 20px;
+    padding: 5rem;
 }
 
 .premium-deco img{
@@ -274,18 +288,20 @@ margin: 15px 15px;
 
 .muebles{
     display: grid;
-    height: 800px;
     background-color: rgb(216, 185, 139);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 50%);
     justify-items: center;
     align-items: center;
     font-size: 20px;
-    color: rgb(65, 52, 34)
+    color: rgb(65, 52, 34);
+    gap: 5rem;
+    padding: 5rem;
 }
 
 .muebles-premium img{
-    width: 60%;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -312,5 +328,42 @@ margin: 15px 15px;
     }
     div .deco-productos{
         grid-area: "deco-productos";
+    }
+
+    .premium{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "bazar-premium";
+    }
+
+    div .premium-bazar{
+        grid-area: "bazar-premium";
+    }
+
+    .decoprem{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "deco-premium";
+    }
+
+    div .premium-deco{
+        grid-area: "deco-premium";
+    }
+
+    .muebles{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "muebles-premium";
+    }
+    div .muebles-premium{
+        grid-area: "muebles-premium";
+    }
+    
+    ul li{
+        display: flex;
+        flex-direction:row-reverse;
     }
 }
