@@ -9,7 +9,7 @@
     }
 
     div .bazar-productos{
-        grid-area: "bazar-productos";
+        grid-area: bazar-productos;
     }
     
     .deco{
@@ -19,7 +19,7 @@
         grid-template-areas: "deco-productos";
     }
     div .deco-productos{
-        grid-area: "deco-productos";
+        grid-area: deco-productos;
     }
 
     .premium{
@@ -30,7 +30,7 @@
     }
 
     div .premium-bazar{
-        grid-area: "bazar-premium";
+        grid-area: bazar-premium;
     }
 
     .decoprem{
@@ -41,7 +41,7 @@
     }
 
     div .premium-deco{
-        grid-area: "deco-premium";
+        grid-area: deco-premium;
     }
 
     .muebles{
@@ -51,7 +51,7 @@
         grid-template-areas: "muebles-premium";
     }
     div .muebles-premium{
-        grid-area: "muebles-premium";
+        grid-area: muebles-premium;
     }
     }
 }
