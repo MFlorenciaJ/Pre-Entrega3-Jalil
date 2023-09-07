@@ -18,52 +18,54 @@ main {
 
 /*--ESTRUCTURA PRODUCTOS--*/
 
-    .bazar{
+    div .bazar{
+        @include grid;
+        background-color: $principal-color;
+        font-size: $subtitulos-px;
+        color: $subtitulos-color;
+        div .bazar-productos{
+                img{
+                     @extend %imagenes;
+                    }
+                }
+            }
+        
+    
+
+    div .deco{
     @include grid;
-    background-color: $principal-color;
+    background-color: $secundario-color;
     font-size: $subtitulos-px;
     color: $subtitulos-color;
-    }
-        
-    .bazar-productos{
-        img{
+        div .deco-productos img{
         @extend %imagenes;
             }
         }
 
-.deco{
-    @include grid;
-    background-color: $secundario-color;
-    font-size: $subtitulos-px;
-    color: $subtitulos-color;
-}
 
-.deco-productos img{
-    @extend %imagenes;
-}
     /*ESTRUCTURA CHAMBA PREMIUM*/
 
-.premium{
-    @include grid;
-    background-color: $secundario-color;
-    font-size: $subtitulos-px;
-    color: $subtitulos-color;
+    div .premium{
+        @include grid;
+        background-color: $secundario-color;
+        font-size: $subtitulos-px;
+        color: $subtitulos-color;
+        div .premium-bazar img{
+            @extend %imagenes;
+            }
+        }
+
+
+    div .decoprem{
+        @include grid;
+        background-color: $principal-color;
+        font-size: $subtitulos-px;
+        color: rgb(65, 52, 34);
+        div .premium-deco img{
+            @extend %imagenes;
+        }
     }
 
-.premium-bazar img{
-    @extend %imagenes;
-}
-
-.decoprem{
-    @include grid;
-    background-color: $principal-color;
-    font-size: $subtitulos-px;
-    color: rgb(65, 52, 34);
-}
-
-.premium-deco img{
-    @extend %imagenes;
-}
 
 /*ESTRUCTURA MUEBLES*/
 
