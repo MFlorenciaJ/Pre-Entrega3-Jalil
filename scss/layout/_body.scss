@@ -1,0 +1,42 @@
+
+body{
+    background-color: $body-color;
+    font-family: 'Encode Sans SC', sans-serif;
+    position: relative;
+
+    section{
+    
+        div{
+        .maquina-router{
+            @extend %maquinas;
+            }
+        .row p{
+            text-align: center;
+            font-size: 15px;
+            color: $parrafos-color;
+            margin-top: 50px;
+            }
+        .maquina-laser{
+            @extend %maquinas;
+            } 
+        }   
+    }
+
+    .ubicacion{
+            background-color: $secundario-color;
+            height: 350px;
+            font-size: 15px;
+            margin: 3rem 0rem 3rem 0rem; 
+            iframe{
+                position: relative;
+                }
+            }
+
+    div{
+        form{
+            background-color: $secundario-color;
+            font-size: $parrafo-px;
+            color: $parrafos-color;
+        }
+    }       
+}

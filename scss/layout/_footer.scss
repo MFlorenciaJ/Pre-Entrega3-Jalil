@@ -1,0 +1,34 @@
+
+.piedepagina{
+    background-image: linear-gradient(to top, #b89267e7, #d3ccc4e7);
+    text-align: right; 
+    color: $titulos-color; 
+    font-size: 15px;
+    padding: 20px;
+
+            a{text-decoration: none;
+                color: $titulos-color;
+            }
+    
+            .redes{
+                text-align: left;
+                    img{
+                        width: 40px;
+                         height: 40px;
+                        margin-top: 5px;
+                         }
+                    }
+             .wsp{
+                 position: fixed;
+                 bottom: 40px;
+                right:30px;
+
+                img{
+                    width: 60px;
+                    height: 60px;
+                    display: block;
+                    margin-top: 5px;
+                     }
+        
+                }
+}

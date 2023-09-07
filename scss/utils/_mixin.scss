@@ -1,0 +1,27 @@
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+@mixin grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+@mixin hover{
+    border-radius: 3rem;
+    border: #553d2e solid;
+    background-color: $secundario-color-hover;
+    padding: 0,5rem;
+}

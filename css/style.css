@@ -1,0 +1,218 @@
+/* reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main .muebles .muebles-premium img, main .premium-deco img, main .premium-bazar img, main .deco-productos img, main .bazar-productos img {
+  width: 300px;
+  height: 300px;
+}
+
+body section div .maquina-laser, body section div .maquina-router {
+  margin: 20px 10px 20px 10px;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  main div .bazar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "bazar-productos";
+  }
+  main div div .bazar-productos {
+    grid-area: "bazar-productos";
+  }
+}
+header {
+  color: #553d2e;
+  background-color: rgba(168, 145, 117, 0.9058823529);
+  font-size: 15px;
+  padding: 20px;
+  top: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: sticky;
+}
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 2px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #553d2e;
+}
+header nav ul li:hover {
+  border-radius: 3rem;
+  border: #553d2e solid;
+  background-color: rgba(201, 183, 160, 0.9058823529);
+  padding: 0, 5rem;
+}
+
+main {
+  color: rgb(148, 100, 66);
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 5rem;
+  background-color: rgba(219, 205, 188, 0.9058823529);
+  /*--ESTRUCTURA PRODUCTOS--*/
+  /*ESTRUCTURA CHAMBA PREMIUM*/
+  /*ESTRUCTURA MUEBLES*/
+  /*estructura contacto*/
+}
+main h1 {
+  font-size: 38px;
+  color: #553d2e;
+}
+main h2 {
+  font-size: 28px;
+  color: #694938;
+}
+main .bazar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  background-color: rgba(168, 145, 117, 0.9058823529);
+  font-size: 28px;
+  color: #694938;
+}
+main .deco {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  background-color: rgba(219, 205, 188, 0.9058823529);
+  font-size: 28px;
+  color: #694938;
+}
+main .premium {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  background-color: rgba(219, 205, 188, 0.9058823529);
+  font-size: 28px;
+  color: #694938;
+}
+main .decoprem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  background-color: rgba(168, 145, 117, 0.9058823529);
+  font-size: 28px;
+  color: rgb(65, 52, 34);
+}
+main .h2-muebles {
+  font-size: 28px;
+  text-align: center;
+  margin: 10px 10px;
+}
+main .p-muebles {
+  font-size: 20px;
+  text-align: center;
+  text-decoration-color: rgb(73, 60, 40);
+  margin: 15px 15px;
+}
+main .muebles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  background-color: rgba(219, 205, 188, 0.9058823529);
+  font-size: 20px;
+  color: rgb(65, 52, 34);
+}
+main .datosusuario {
+  background-color: rgba(211, 204, 196, 0.9058823529);
+  color: #3a302b;
+  font-size: 15px;
+  display: flex;
+  gap: 5rem;
+  padding: 3rem;
+  margin-top: 6rem;
+}
+main .datosusuario img {
+  width: 50%;
+  height: 50%;
+  border-radius: 2rem;
+  margin: 7rem;
+}
+
+.piedepagina {
+  background-image: linear-gradient(to top, rgba(184, 146, 103, 0.9058823529), rgba(211, 204, 196, 0.9058823529));
+  text-align: right;
+  color: #553d2e;
+  font-size: 15px;
+  padding: 20px;
+}
+.piedepagina a {
+  text-decoration: none;
+  color: #553d2e;
+}
+.piedepagina .redes {
+  text-align: left;
+}
+.piedepagina .redes img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+.piedepagina .wsp {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+.piedepagina .wsp img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-top: 5px;
+}
+
+body {
+  background-color: rgba(211, 204, 196, 0.9058823529);
+  font-family: "Encode Sans SC", sans-serif;
+  position: relative;
+}
+body section div .row p {
+  text-align: center;
+  font-size: 15px;
+  color: #3a302b;
+  margin-top: 50px;
+}
+body .ubicacion {
+  background-color: rgba(219, 205, 188, 0.9058823529);
+  height: 350px;
+  font-size: 15px;
+  margin: 3rem 0rem 3rem 0rem;
+}
+body .ubicacion iframe {
+  position: relative;
+}
+body div form {
+  background-color: rgba(219, 205, 188, 0.9058823529);
+  font-size: 20px;
+  color: #3a302b;
+}
+
+/*# sourceMappingURL=style.css.map */
