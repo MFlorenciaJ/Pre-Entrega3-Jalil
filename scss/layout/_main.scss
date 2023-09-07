@@ -1,10 +1,12 @@
 
+
 main {
     color:rgb(148, 100, 66);
     font-size: $titulos-px;
     text-align: center;
     margin-bottom: 5rem;
     background-color: $secundario-color;
+
         h1{
         font-size: $titulos-px;
         color: $titulos-color;
@@ -13,99 +15,91 @@ main {
         font-size: $subtitulos-px;
         color: $subtitulos-color;
         }
-
-    
-
-/*--ESTRUCTURA PRODUCTOS--*/
-
-    div .bazar{
+    /*--ESTRUCTURA PRODUCTOS--*/
+    .bazar {
         @include grid;
         background-color: $principal-color;
         font-size: $subtitulos-px;
         color: $subtitulos-color;
-        div .bazar-productos{
-                img{
-                     @extend %imagenes;
-                    }
-                }
+        }   
+    .bazar-productos {
+        img{ 
+            @extend %imagenes;
             }
-        
-    
-
-    div .deco{
-    @include grid;
-    background-color: $secundario-color;
-    font-size: $subtitulos-px;
-    color: $subtitulos-color;
-        div .deco-productos img{
-        @extend %imagenes;
-            }
-        }
-
-
-    /*ESTRUCTURA CHAMBA PREMIUM*/
-
-    div .premium{
+        }      
+    .deco {
         @include grid;
         background-color: $secundario-color;
         font-size: $subtitulos-px;
         color: $subtitulos-color;
-        div .premium-bazar img{
+        }
+    .deco-productos {
+        img{
             @extend %imagenes;
             }
         }
+    /*ESTRUCTURA CHAMBA PREMIUM*/
 
-
-    div .decoprem{
+    .premium {
+        @include grid;
+        background-color: $secundario-color;
+        font-size: $subtitulos-px;
+        color: $subtitulos-color;
+        }
+    .premium-bazar {
+        img{
+            @extend %imagenes;
+            }
+        }       
+    .decoprem {
         @include grid;
         background-color: $principal-color;
         font-size: $subtitulos-px;
         color: rgb(65, 52, 34);
-        div .premium-deco img{
+        }        
+    .premium-deco {
+            img{
             @extend %imagenes;
+            }
         }
-    }
-
 
 /*ESTRUCTURA MUEBLES*/
 
-.h2-muebles{
+    .h2-muebles{
     font-size: $subtitulos-px;
     text-align: center;
     margin: 10px 10px;
-
-}
-
-.p-muebles{
-font-size: $parrafo-px;
-text-align: center;
-text-decoration-color: rgb(73, 60, 40);
-margin: 15px 15px;
-}
-
-.muebles{
-    @include grid-2;
-    background-color: $secundario-color;
-    font-size: 20px;
-    color: rgb(65, 52, 34);
-    
-
-    .muebles-premium img{
-        @extend %imagenes;
-        }
     }
 
-/*estructura contacto*/
+    .p-muebles{
+    font-size: $parrafo-px;
+    text-align: center;
+    text-decoration-color: rgb(73, 60, 40);
+    margin: 15px 15px;
+    }
 
+    .muebles {
+        @include grid-2;
+        background-color: $secundario-color;
+        font-size: 20px;
+        color: rgb(65, 52, 34);
+        }
 
-        .datosusuario{
-            background-color: $body-color;
-            color: $parrafos-color;
-            font-size: 15px;
-            display: flex;
-            gap: 5rem;
-            padding: 3rem;
-            margin-top: 6rem;
+    .muebles-premium {
+        img{
+            @extend %imagenes;
+            }
+        }
+    /*estructura contacto*/
+
+    .datosusuario{
+        background-color: $body-color;
+        color: $parrafos-color;
+        font-size: 15px;
+        display: flex;
+        gap: 5rem;
+        padding: 3rem;
+        margin-top: 6rem;
             img{
                 width: 50%;
                 height: 50%;
@@ -113,6 +107,4 @@ margin: 15px 15px;
                 margin: 7rem;
             }
         }
-
-
-}
+    }

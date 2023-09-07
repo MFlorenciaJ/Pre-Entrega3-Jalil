@@ -1,60 +1,52 @@
 
-@media screen and (max-width:800px){
-    main{
-        div .bazar{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-                grid-template-areas: "bazar-productos";
-
-                div .bazar-productos{
-                    grid-area:"bazar-productos";
-                }
-            }
-
-        div .deco{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-                grid-template-areas: "deco-productos";
-                div .deco-productos{
-                    grid-area: "deco-productos";
-            }
+@media screen and (max-width: 800px) {
+        .bazar {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "bazar-productos";
         }
-    
-        div .premium{
+        .bazar-productos {
+            grid-area: bazar-productos;
+        }
+
+        .deco {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "deco-productos";
+        }
+        .deco-productos {
+            grid-area: deco-productos;
+        }
+
+        .premium {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-template-areas: "bazar-premium";
-
-            div .premium-bazar{
-                grid-area: "bazar-premium";
-            }
         }
-    
-        div .decoprem{
+        .premium-bazar {
+            grid-area: bazar-premium;
+        }
+
+        .decoprem {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-template-areas: "deco-premium";
-
-            div .premium-deco{
-                grid-area: "deco-premium";
-            }
         }
-    
-        div .muebles{
+        .premium-deco {
+            grid-area: deco-premium;
+        }
+
+        .muebles {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-template-areas: "muebles-premium";
-
-            div .muebles-premium{
-                grid-area: "muebles-premium";
-            }
         }
-    
+        .muebles-premium {
+            grid-area: muebles-premium;
+        }
     }
-
-}
