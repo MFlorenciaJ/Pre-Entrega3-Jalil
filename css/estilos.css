@@ -187,33 +187,33 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "bazar-productos"; }
-  main div .bazar-productos {
-    grid-area: "bazar-productos"; }
+  main .bazar-productos {
+    grid-area: bazar-productos; }
   main .deco {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "deco-productos"; }
-  main div .deco-productos {
-    grid-area: "deco-productos"; }
+  main .deco-productos {
+    grid-area: deco-productos; }
   main .premium {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "bazar-premium"; }
-  main div .premium-bazar {
-    grid-area: "bazar-premium"; }
+  main .premium-bazar {
+    grid-area: bazar-premium; }
   main .decoprem {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "deco-premium"; }
-  main div .premium-deco {
-    grid-area: "deco-premium"; }
+  main .premium-deco {
+    grid-area: deco-premium; }
   main .muebles {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "muebles-premium"; }
-  main div .muebles-premium {
-    grid-area: "muebles-premium"; } }
+  main .muebles-premium {
+    grid-area: muebles-premium; } }
