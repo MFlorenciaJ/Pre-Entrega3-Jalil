@@ -7,7 +7,7 @@
 html {
   font-size: 62.5%; }
 
-main .bazar-productos img, main .deco-productos img, main .premium-bazar img, main .premium-deco img, main .muebles-premium img {
+main .bazar-productos img, main .deco-productos img, main .premium-bazar img, main .premium-deco img {
   width: 60%;
   height: 60%; }
 
@@ -117,6 +117,9 @@ main {
     background-color: #dbcdbce7;
     font-size: 20px;
     color: #413422; }
+  main .muebles-premium img {
+    width: 300px;
+    height: 300px; }
   main .datosusuario {
     background-color: #d3ccc4e7;
     color: #3a302b;
@@ -179,38 +182,38 @@ body {
 
 /*mq para celular*/
 @media screen and (max-width: 800px) {
-  .bazar {
+  main .bazar {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "bazar-productos"; }
-  .bazar-productos {
-    grid-area: bazar-productos; }
-  .deco {
+  main div .bazar-productos {
+    grid-area: "bazar-productos"; }
+  main .deco {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "deco-productos"; }
-  .deco-productos {
-    grid-area: deco-productos; }
-  .premium {
+  main div .deco-productos {
+    grid-area: "deco-productos"; }
+  main .premium {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "bazar-premium"; }
-  .premium-bazar {
-    grid-area: bazar-premium; }
-  .decoprem {
+  main div .premium-bazar {
+    grid-area: "bazar-premium"; }
+  main .decoprem {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "deco-premium"; }
-  .premium-deco {
-    grid-area: deco-premium; }
-  .muebles {
+  main div .premium-deco {
+    grid-area: "deco-premium"; }
+  main .muebles {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "muebles-premium"; }
-  .muebles-premium {
-    grid-area: muebles-premium; } }
+  main div .muebles-premium {
+    grid-area: "muebles-premium"; } }
