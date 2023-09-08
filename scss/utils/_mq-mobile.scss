@@ -1,57 +1,56 @@
 
 @media screen and (max-width: 800px) {
     main{
-        .bazar{
+    .bazar {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "bazar-productos";
-        }
-
-        .bazar-productos{
+    }
+    .bazar-productos {
         grid-area: bazar-productos;
-        }
+    }
     
-        .deco{
+    .deco {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "deco-productos";
-        }
-        .deco-productos{
+    }
+    .deco-productos {
         grid-area: deco-productos;
-        }
+    }
 
-        .premium{
+    .premium {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "bazar-premium";
-        }
-
-        .premium-bazar{
+    }
+    .premium-bazar {
         grid-area: bazar-premium;
-        }
+    }
 
-        .decoprem{
+    .decoprem {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "deco-premium";
-        }
-
-        .premium-deco{
+    }
+    .premium-deco {
         grid-area: deco-premium;
-        }
+    }
 
-        .muebles{
+
+    .muebles {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "muebles-premium";
-        }
-        .muebles-premium{
+    
+    }
+    .muebles-premium {
         grid-area: muebles-premium;
-        }
+    }
     }
 }
