@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 800px) {
-    main{
+    main {
     .bazar {
         display: grid;
         grid-template-columns: 1fr;
@@ -47,10 +47,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "muebles-premium";
-    
-    }
-    .muebles-premium {
+        }
+        .muebles-premium {
         grid-area: muebles-premium;
-    }
+        }
     }
 }

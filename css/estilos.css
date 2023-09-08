@@ -44,9 +44,7 @@ main {
   margin-bottom: 5rem;
   background-color: #dbcdbce7;
   /*--ESTRUCTURA PRODUCTOS--*/
-  /*ESTRUCTURA CHAMBA PREMIUM*/
-  /*ESTRUCTURA MUEBLES*/
-  /*estructura contacto*/ }
+  /*ESTRUCTURA CHAMBA PREMIUM*/ }
   main h1 {
     font-size: 38px;
     color: #553d2e; }
@@ -97,42 +95,49 @@ main {
     background-color: #a89175e7;
     font-size: 28px;
     color: #413422; }
-  main .h2-muebles {
-    font-size: 28px;
-    text-align: center;
-    margin: 10px 10px; }
-  main .p-muebles {
-    font-size: 20px;
-    text-align: center;
-    text-decoration-color: #493c28;
-    margin: 15px 15px; }
-  main .muebles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 50%);
-    justify-items: center;
-    align-items: center;
-    gap: 3rem;
-    padding: 5rem;
-    background-color: #dbcdbce7;
-    font-size: 20px;
-    color: #413422; }
-  main .muebles-premium img {
-    width: 300px;
-    height: 300px; }
-  main .datosusuario {
-    background-color: #d3ccc4e7;
-    color: #3a302b;
-    font-size: 15px;
-    display: flex;
-    gap: 5rem;
-    padding: 3rem;
-    margin-top: 6rem; }
-    main .datosusuario img {
-      width: 50%;
-      height: 50%;
-      border-radius: 2rem;
-      margin: 7rem; }
+
+/*ESTRUCTURA MUEBLES*/
+.h2-muebles {
+  font-size: 28px;
+  text-align: center;
+  margin: 10px 10px; }
+
+.p-muebles {
+  font-size: 20px;
+  text-align: center;
+  text-decoration-color: #493c28;
+  margin: 15px 15px; }
+
+.muebles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  background-color: #dbcdbce7;
+  font-size: 20px;
+  color: #413422; }
+
+.muebles-premium img {
+  width: 300px;
+  height: 300px; }
+
+/*estructura contacto*/
+.datosusuario {
+  background-color: #d3ccc4e7;
+  color: #3a302b;
+  font-size: 15px;
+  display: flex;
+  gap: 5rem;
+  padding: 3rem;
+  margin-top: 6rem; }
+  .datosusuario img {
+    width: 50%;
+    height: 50%;
+    border-radius: 2rem;
+    margin: 7rem; }
 
 .piedepagina {
   background-image: linear-gradient(to top, #b89267e7, #d3ccc4e7);
